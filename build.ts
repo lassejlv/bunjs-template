@@ -3,8 +3,12 @@ import fs from 'fs'
 import path from 'path'
 import consola from 'consola'
 
+interface CurrentProcess {
+  kill: () => void
+}
+
 const devMode = process.argv[2] === 'dev'
-let currentProcess: any = null
+let currentProcess: CurrentProcess | null = null
 const validFileExt: string[] = ['.ts', '.tsx']
 
 async function build() {
