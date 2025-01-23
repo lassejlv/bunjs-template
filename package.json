@@ -1,0 +1,19 @@
+{
+  "name": "bunjs-template",
+  "module": "src/main.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run build dev",
+    "build": "bun build.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "bun-easy-router": "^0.1.6",
+    "consola": "^3.4.0"
+  }
+}
